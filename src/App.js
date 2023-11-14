@@ -15,7 +15,7 @@ class App extends React.Component {
 
              return <Atraccion // este es un componente
 
-              img= "../img/minecraft.png"
+              img= "../img/jota.png"
               nombre = "tilcara"
               descipcion ="atraccion turistica Quebrada Humahuaca"
               valoracion = "Muy bien"></Atraccion>
