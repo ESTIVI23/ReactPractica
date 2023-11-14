@@ -1,5 +1,6 @@
 import React  from "react";
 import Atraccion from "./components/Atraccion";
+import sitios from './data/sitiosJujuy.json';
 import { Container, Row } from "react-bootstrap";
 /*class App extends React.Component{
 render(){
@@ -18,7 +19,7 @@ export default App;  */
 
              return <Atraccion // este es un componente
 
-              img= "../img/jota.png"
+              img= "../img/jaaaota.png"
               nombre = "tilcara"
               descipcion ="atraccion turistica Quebrada Humahuaca"
               valoracion = "Muy bien"></Atraccion>
@@ -33,13 +34,14 @@ function App (){
          <Row>
          {sitios.map((sitio,i) => // el i indica el lugar de cada atraccion 
           <Atraccion
-          key={i}   // su identificador de cada  componente creada de atraccion creada
+          k ey={i}   // su identificador de cada  componente creada de atraccion creada
           img = {sitio.img}
           nombre = {sitio.nombre}
-          descripcion ={sitio.descripcion}
+          description ={sitio.description}
           valoracion = {sitio.valoracion}
          
           ></Atraccion>
+             
           )}</Row>
      </Container >);
 

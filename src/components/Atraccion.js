@@ -29,13 +29,13 @@ function Atraccion (props){  // tiene qe tener si o si el parametro
    return (
    <Card style={{ width: '18rem' }}>
         
-        <Card.Img variant="top" src={props.img} />  // usamos pros  para que usea lo qe pusimos en app atracion      
+        <Card.Img variant="top" src={props.img} /> 
 
         <Card.Body>
          
           <Card.Title>{props.nombre}</Card.Title>
-          <Card.Text>{props.descipcion} </Card.Text>
-          <Card.Subtitle>{this.props.valoracion}</Card.Subtitle>
+          <Card.Text>{props.description} </Card.Text>
+          <Card.Subtitle>{props.valoracion}</Card.Subtitle>
           <Button variant="primary">Comprar</Button>
         </Card.Body>
 
