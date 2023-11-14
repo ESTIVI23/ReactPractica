@@ -7,12 +7,13 @@ class Atraccion extends React.Component {
         
       <Card style={{ width: '18rem' }}>
         
-        <Card.Img variant="top" src="/img/minecraft.png" />
+        <Card.Img variant="top" src={this.props.img} />  // usamos pros  para que usea lo qe pusimos en app atracion
 
         <Card.Body>
-          <Card.Title>TITULOs</Card.Title>
-          <Card.Text>texto del tanos mi perro </Card.Text>
-          <Card.Subtitle>detalles de tanos aaaa tanos</Card.Subtitle>
+         
+          <Card.Title>{this.props.nombre}</Card.Title>
+          <Card.Text>{this.props.descipcion} </Card.Text>
+          <Card.Subtitle>{this.props.valoracion}</Card.Subtitle>
           <Button variant="primary">Comprar</Button>
         </Card.Body>
 
